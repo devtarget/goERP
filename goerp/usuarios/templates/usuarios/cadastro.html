@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuarios</title>
+</head>
+<body>
+<form action="/usuarios/cadastro" method="post">
+	{% csrf_token %}
+	<h1>Usuarios</h1>
+	<input type="text" name="nome"><br>
+	<input type="text" name="uf"><br>
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

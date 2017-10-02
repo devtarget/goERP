@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista Usuario</title>
+</head>
+<body>
+<h1>Lista de Usuarios</h1>
+<ul>
+    {% for cidade in object_list  %}
+	    <li>{{ usuario.nome }} {{ usuario.uf }} </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

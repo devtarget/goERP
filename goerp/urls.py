@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from goerp.usuarios.views import cadastrousuarios
+from goerp.usuarios.views import listausuarios
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+	url(r'^usuarios/cadastro', cadastrousuarios),
+    url(r'^usuarios/lista', listausuarios),
 ]
